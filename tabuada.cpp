@@ -1,12 +1,14 @@
-#include <stdio.h>
+#include <iostream>
+#include <cstdlib>
+using namespace std;
 
 int main(void){
     int tabuada, contador = 0;
-    printf("Informe um valor para a tabuada: ");
-    scanf("%d", &tabuada);
+    cout << "Informe um valor para a tabuada: " << endl;
+    cin >> tabuada;
 
     for (contador = 0; contador <= 10; contador++){
-        printf("%d X %d = %d\n", tabuada, contador , contador*tabuada);
+        cout << contador << " x " << tabuada << " = " << contador * tabuada << endl; 
     }
     return 0;
 }
